@@ -1,6 +1,6 @@
 {
   "name": "v-pagy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight and customizeable Bootstrap Pagination for Vue ",
   "main": "index.js",
   "scripts": {
