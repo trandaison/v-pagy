@@ -1,0 +1,19 @@
+{
+  "name": "v-pagy",
+  "version": "1.0.1",
+  "description": "A lightweight and customizeable Bootstrap Pagination for Vue ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trandaison/v-pagy.git"
+  },
+  "author": "trandaison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trandaison/v-pagy/issues"
+  },
+  "homepage": "https://github.com/trandaison/v-pagy#readme"
+}
