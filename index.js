@@ -1,4 +1,4 @@
-export default {
+var vpagy = {
   template: `<nav :class="[navClass]">
     <ul class="pagination" :class="[ulClass]">
       <li v-if="showFirst" :class="[liClass, { 'disabled' : internalCurrentPage <= 1 }]" class="page-item first">
@@ -111,7 +111,7 @@ export default {
       return this.pageSize;
     },
     lastPage() {
-      const _total = this._total / this._pageSize;
+      var _total = this._total / this._pageSize;
       if (_total < 1) return 1;
 
       if (_total % 1 !== 0) return parseInt(_total + 1, 10);
@@ -119,13 +119,13 @@ export default {
       return _total;
     },
     array() {
-      let _from = this.internalCurrentPage - this.config.offset;
+      var _from = this.internalCurrentPage - this.config.offset;
       if (_from < 1) _from = 1;
 
-      let _to = _from + (this.config.offset * 2);
+      var _to = _from + (this.config.offset * 2);
       if (_to >= this.lastPage) _to = this.lastPage;
 
-      const _arr = [];
+      var _arr = [];
       while (_from <= _to) {
         _arr.push(_from);
         _from += 1;
@@ -179,3 +179,8 @@ export default {
     },
   },
 };
+
+module.exports = vpagy;
+
+// Allow use of default import syntax in TypeScript
+module.exports.default = vpagy;
