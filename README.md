@@ -89,6 +89,12 @@ If you want to use HTML content for the first, last, previous and next button, t
 </pagination>
 ```
 
+### Events
+| Event name | Arg Type | Description |
+|---|---|---|
+| `page-change` | `number` | Fire on click to the page link (except for the current one) |
+| `refresh-page` | `number` | Fire on click to the current page link |
+
 ### props
 | Name | Type | Required | Default | Description |
 |---|---|---|---|---|
