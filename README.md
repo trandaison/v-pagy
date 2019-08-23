@@ -23,6 +23,7 @@ yarn add v-pagy
     :current-page="page"
     :options="options"
     @page-change="onPageChangedHandler"
+    @refresh-page="onRefreshPageHandler"
     nav-class="padding-10"
     ul-class="bg-color-red"
     li-class="txt-color-blue"
@@ -56,6 +57,10 @@ export default {
       console.log(page);
       // Exec your response to server passing 'page' params as clicked button paging
     },
+    onRefreshPageHandler(page) {
+      console.log(page);
+      // Exec your response to server passing 'page' params as clicked on current active paging button
+    },
   },
 });
 </script>
@@ -70,6 +75,7 @@ If you want to use HTML content for the first, last, previous and next button, t
   :current-page="page"
   :options="options"
   @page-change="onPageChangedHandler"
+  @refresh-page="onRefreshPageHandler"
   nav-class="padding-10"
   ul-class="bg-color-red"
   li-class="txt-color-blue"

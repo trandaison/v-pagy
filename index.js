@@ -172,7 +172,7 @@ export default {
 
   methods: {
     changePage(page) {
-      if (this.internalCurrentPage === page) return;
+      if (this.internalCurrentPage === page) return this.$emit('refresh-page', page);
       this.internalCurrentPage = page;
       this.callback(page);
       this.$emit('change-page', page);
